@@ -2,9 +2,9 @@ ImmutableとJS機械学習のページ
 ----
 
 ```sh
-git clone 
+git clone https://github.com/MSakamaki/statistical_analysis.git
 
-cd playimmutable
+cd statistical_analysis
 
 npm  install
 jspm inject

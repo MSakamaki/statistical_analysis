@@ -27,12 +27,6 @@ export default class Perceptron {
     this.size = size || 100;
   }
 
-
-  /**
-  * 
-  */
-  xxx(){}
-
   /**
   * 初期処理
   */
@@ -137,7 +131,7 @@ export default class Perceptron {
   }
 
   /**
-  * (線)回答描画
+  * 点を画面に描画
   */
   showDot(){
     this.X.forEach((v, i)=>{
@@ -153,17 +147,15 @@ export default class Perceptron {
   }
 
   /**
-  * (線)回答描画
+  * (線)回答描画 
   */
   view(w){
-    console.log(w)
     var fill = (x, y, m)=>{
       var ctxR = this.canvas.getContext('2d');
       ctxR.beginPath();
       ctxR.fillStyle = (m===1) ? 'rgba(255,55,55,0.1)' : 'rgba(55,55, 255,0.1)';
       ctxR.arc(x, y, 1, 0, Math.PI*2, false);
       ctxR.fill();
-
     };
     var ary = Array.from(new Array(299), (v, i) => {
       return Array.from(new Array(299), (_v, _i) => 0)
