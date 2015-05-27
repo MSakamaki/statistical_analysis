@@ -14,7 +14,9 @@ jspm install
 
 ### js perceptron
 
+[パーセプトロンをJSで実装してみた](https://github.com/MSakamaki/statistical_analysis/blob/master/client/app/perceptron.js)
 
+[参考にしたpythonのコード](https://github.com/MSakamaki/statistical_analysis/blob/master/py/p.py)
 
 ### Test Cases
 
