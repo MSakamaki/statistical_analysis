@@ -1,4 +1,4 @@
-Play Immutable
+ImmutableとJS機械学習のページ
 ----
 
 ```sh
@@ -11,6 +11,10 @@ jspm inject
 jspm install
 
 ```
+
+### js perceptron
+
+
 
 ### Test Cases
 

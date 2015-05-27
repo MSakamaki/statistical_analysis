@@ -1,4 +1,5 @@
 import PlayImmutabe from './playImmutable';
+import Perceptron from './perceptron';
 import Justice from 'justice';
 
 Justice.init({
@@ -27,4 +28,14 @@ $$('#case1').addEventListener('click', ()=>{
   var task = 1000;
   pi.CaseArrayPojo01(size, task);
   pi.CaseArrayImmutable01(size, task);
+});
+
+var p = new Perceptron($$('#canvas'),100);
+console.log('Perceptron ready');
+p.init();
+$$('#viewChart').addEventListener('click', ()=>{
+  
+  console.log('Perceptron go');
+  p.start();
+  console.log('Perceptron doneing.');
 });
